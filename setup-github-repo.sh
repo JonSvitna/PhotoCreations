@@ -63,7 +63,7 @@ $REPO_DESC
 ### Project Setup
 1. Clone the repository:
     \`\`\`bash
-    git clone https://github.com/\$(gh auth status --json username -q .username)/$REPO_NAME.git
+    git clone https://github.com/$(gh auth status --json username -q .username)/$REPO_NAME.git
     cd $REPO_NAME
     \`\`\`
 2. Install dependencies (if applicable, e.g., for TailwindCSS or Node.js):
