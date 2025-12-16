@@ -1,64 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Creations</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Photo Creations</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero">
-            <h2>Welcome to Photo Creations</h2>
-            <p>Capturing moments, creating memories</p>
-        </section>
-
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="placeholder-image">Photo 1</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-image">Photo 2</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-image">Photo 3</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-image">Photo 4</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Photo Creations is dedicated to capturing beautiful moments and transforming them into lasting memories.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with us for your photography needs.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; <span id="year"></span> Photo Creations. All rights reserved.</p>
-    </footer>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photo-portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
