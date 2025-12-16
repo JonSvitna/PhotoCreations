@@ -63,7 +63,7 @@ $REPO_DESC
 ### Project Setup
 1. Clone the repository:
     \`\`\`bash
-    git clone https://github.com/YOUR-USERNAME/$REPO_NAME.git
+    git clone https://github.com/\$(gh auth status --json username -q .username)/$REPO_NAME.git
     cd $REPO_NAME
     \`\`\`
 2. Install dependencies (if applicable, e.g., for TailwindCSS or Node.js):
@@ -80,7 +80,7 @@ EOF
 
 # Step 9: Add Boilerplate "index.html"
 echo "Adding boilerplate HTML..."
-cat << 'EOF' > index.html
+cat << EOF > index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
