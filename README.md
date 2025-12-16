@@ -1,39 +1,66 @@
-# PhotoCreations
+# Photo Creations
 
-A modern, responsive photography portfolio website showcasing beautiful photo creations.
+A high-end, editorial photography portfolio website with a luxury aesthetic inspired by untdphotography.com.
 
 ## Features
 
-- **Responsive Design**: Works seamlessly across all devices
-- **Modern UI**: Clean and elegant interface with gradient styling
-- **Gallery Section**: Showcase your photography portfolio
-- **Easy Navigation**: Simple and intuitive navigation menu
-- **Contact Information**: Easy way for clients to get in touch
+### Design & UX
+- **Editorial, Luxury Aesthetic**: Cinematic, calm, and story-driven design
+- **Fullscreen Hero Section**: Rotating background images with smooth transitions
+- **Minimal Text Overlays**: Elegant serif typography with Playfair Display
+- **Sticky Transparent Navigation**: Clean, minimal navigation that adapts on scroll
+- **Image-First Storytelling**: Full-width stacked images leading every section
+- **Two-Column Editorial Sections**: Philosophy and approach with large supporting images
+- **Gallery Preview**: Large clickable image blocks for Weddings, Portraits, Engagements
+- **Minimal Testimonials**: Large centered quotes without heavy styling
+- **Clean Call-to-Actions**: Text links instead of heavy buttons
+- **Generous Whitespace**: Breathing room between sections
+- **Smooth Animations**: Subtle fade and scroll effects with Framer Motion
 
-## Screenshots
+### Technical Stack
+- **Vite + React**: Fast development and optimized production builds
+- **Tailwind CSS v4**: Utility-first styling with custom theme
+- **Framer Motion**: Smooth, performant animations
+- **Responsive Design**: Fully optimized for all devices
 
-### Full Homepage
-![Full Homepage](screenshots/homepage-full.png)
+### Typography
+- **Headings**: Playfair Display (elegant serif)
+- **Body Text**: Inter (clean sans-serif)
 
-### Hero Section
-![Hero Section](screenshots/hero-section.png)
+## Development
 
-### Gallery Section
-![Gallery Section](screenshots/gallery-section.png)
+```bash
+# Install dependencies
+npm install
 
-## About
+# Start development server
+npm run dev
 
-Photo Creations is dedicated to capturing beautiful moments and transforming them into lasting memories.
+# Build for production
+npm run build
 
-## Technologies Used
-
-- HTML5
-- CSS3
-- Vanilla JavaScript
+# Preview production build
+npm run preview
+```
 
 ## Deployment
 
-This site is deployed on Vercel and can be accessed at your custom domain.
+This site is configured for deployment on Vercel with automatic builds from the main branch.
+
+## Design Philosophy
+
+The site avoids:
+- Boxed layouts
+- Overuse of buttons
+- Heavy text blocks
+- E-commerce styling
+
+Instead, it focuses on:
+- Fullscreen, immersive imagery
+- Minimal, elegant typography
+- Story-driven presentation
+- Luxury aesthetic
+- Generous whitespace
 
 ## License
 
