@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Photo Creations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Creations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Our Portfolio</h2>
+            <p>Explore our collection of stunning photography</p>
+        </section>
+
+        <section class="gallery-categories">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="wedding">Weddings</button>
+                <button class="filter-btn" data-category="portrait">Portraits</button>
+                <button class="filter-btn" data-category="landscape">Landscapes</button>
+                <button class="filter-btn" data-category="commercial">Commercial</button>
+                <button class="filter-btn" data-category="events">Events</button>
+            </div>
+        </section>
+
+        <section class="portfolio-gallery">
+            <div class="gallery-grid large">
+                <div class="gallery-item" data-category="wedding">
+                    <div class="placeholder-image">Wedding 1</div>
+                    <div class="gallery-overlay">
+                        <h3>Elegant Wedding</h3>
+                        <p>Sarah & Michael</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <div class="placeholder-image">Portrait 1</div>
+                    <div class="gallery-overlay">
+                        <h3>Executive Portrait</h3>
+                        <p>Corporate Session</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <div class="placeholder-image">Landscape 1</div>
+                    <div class="gallery-overlay">
+                        <h3>Mountain Vista</h3>
+                        <p>Nature Collection</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <div class="placeholder-image">Commercial 1</div>
+                    <div class="gallery-overlay">
+                        <h3>Product Showcase</h3>
+                        <p>Brand Campaign</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <div class="placeholder-image">Wedding 2</div>
+                    <div class="gallery-overlay">
+                        <h3>Garden Wedding</h3>
+                        <p>Emma & James</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <div class="placeholder-image">Event 1</div>
+                    <div class="gallery-overlay">
+                        <h3>Gala Evening</h3>
+                        <p>Corporate Event</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <div class="placeholder-image">Portrait 2</div>
+                    <div class="gallery-overlay">
+                        <h3>Family Portrait</h3>
+                        <p>Thompson Family</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <div class="placeholder-image">Landscape 2</div>
+                    <div class="gallery-overlay">
+                        <h3>Coastal Sunset</h3>
+                        <p>Seascape Series</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <div class="placeholder-image">Commercial 2</div>
+                    <div class="gallery-overlay">
+                        <h3>Architecture</h3>
+                        <p>Real Estate</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <div class="placeholder-image">Wedding 3</div>
+                    <div class="gallery-overlay">
+                        <h3>Beach Wedding</h3>
+                        <p>Lisa & David</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <div class="placeholder-image">Event 2</div>
+                    <div class="gallery-overlay">
+                        <h3>Conference</h3>
+                        <p>Business Summit</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <div class="placeholder-image">Portrait 3</div>
+                    <div class="gallery-overlay">
+                        <h3>Senior Portrait</h3>
+                        <p>Class of 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Create Your Story?</h2>
+            <p>Let's discuss your photography needs</p>
+            <a href="contact.html" class="cta-button">Get In Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Photo Creations</h3>
+                <p>Professional Photography Services</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p>Email: info@photocreations.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Photo Creations. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Simple gallery filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const category = btn.dataset.category;
+                
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                galleryItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
